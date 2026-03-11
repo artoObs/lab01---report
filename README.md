@@ -182,7 +182,7 @@
    ```
    Оно вывело огромное количество файлов:
    <details>
-   <summary>Оно вывело огромное количество файлов:</summary>
+   <summary>1763 названия выведенных файлов:</summary>
 
    ./libs/fiber/examples/asio/round_robin.hpp
 ./libs/fiber/examples/asio/autoecho.cpp
