@@ -185,11 +185,11 @@
    ```bash
    ~/boost_1_69_0/boost_1_69_0$ grep -rl "boost::asio" .
    ```
+   > Тут не совсем понял. Я скопировал вроде верно, переносы присутствуют, так что не совсем понял, в чём проблема. В блоке кода записал.
    Оно вывело огромное количество файлов:
-   <details>
-   <summary>1763 названия выведенных файлов:</summary>
-
-   ./libs/fiber/examples/asio/round_robin.hpp
+   1763 названия выведенных файлов:
+```bash
+./libs/fiber/examples/asio/round_robin.hpp
 ./libs/fiber/examples/asio/autoecho.cpp
 ./libs/fiber/examples/asio/ps/server.cpp
 ./libs/fiber/examples/asio/ps/subscriber.cpp
@@ -1952,11 +1952,11 @@
 ./doc/html/boost_asio/example/cpp11/buffers/reference_counted.cpp
 ./doc/html/boost_asio/example/cpp11/invocation/prioritised_handlers.cpp
 ./doc/html/boost_asio/example/cpp11/allocation/server.cpp
-
-   </details>
+```
 
 8. Скомпилируйте boost. Можно воспользоваться инструкцией или ссылкой.
    > Здесь у меня возникла проблема. Я не могу по какой-то причине использовать b2 повсеместно, она существует только локально. Но непосредственно в директории boost_1_69_0 я могу её использовать.
+   > Пояснение: при вводе b2 --version в любой папке, кроме boost_1_69_0, пишет, что функции не существует. В целом это никак не влияет ни на что. Просто я провозился с этим, думая, что функция нужна будет в будущем. А так всё в порядке.
 
 9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
    ```bash
